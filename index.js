@@ -474,7 +474,7 @@ const questions = [
 //Função pra mudar a imagem de background usando a API da Unsplash (Limite de 50 imagens por hora)
 function changeBackground() {
   //API UTILIZA IMAGENS RANDOMICAMENTE REFERENTE A COMPUTADORES
-  fetch('https://api.unsplash.com/photos/random?query=computers&client_id=kKc_pjLL4ZF84tZncaCihYKVYLuhY1No7moLt5R7xKI')
+  fetch('https://api.unsplash.com/photos/random?query=computers&client_id={SUA-CHAVE-API}')
     .then(response => response.json())
     .then(data => {
       const imageUrl = data.urls.regular;
